@@ -3,7 +3,9 @@
   grid-template-columns: 15.25rem 1fr;
   grid-template-rows: 6rem 1fr;
   block-size: 100vh;
-  grid-template-areas: "header header" "sidebar calendar";
+  grid-template-areas:
+    'header header'
+    'sidebar calendar';
 }
 
 .page .header {
