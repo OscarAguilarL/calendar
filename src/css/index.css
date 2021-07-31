@@ -1,25 +1,3 @@
-:root {
-  --white: #fffffe;
-  --gray50: #222222;
-  --gray20: #70757a;
-  --gray10: #f1f3f4;
-  --gray30: #3c4043;
-  --blue10: #1a73e8;
-  --blue20: #039be5;
-  --red10: #e8453c;
-  --green10: #33b679;
-  --blue30: #1967d2;
-  --baseFont: 'Roboto', sans-serif;
-  --body1Regular: 400 0.875rem/1.25rem var(--baseFont);
-  --body1Medium: 500 0.875rem/1.25rem var(--baseFont);
-  --body3Medium: 500 0.625rem/0.5rem var(--baseFont);
-  --body3Regular: 400 0.625rem/0.5rem var(--baseFont);
-  --body2Regular: 400 0.75rem/1rem var(--baseFont);
-  --body2Medium: 500 0.75rem/1rem var(--baseFont);
-  --button: 500 0.875rem/1rem var(--baseFont);
-  --subtitle: 400 1.375rem/1.75rem var(--baseFont);
-}
-
-body {
-  font: var(--body1Regular);
-}
+@import './global.css';
+@import './icons.css';
+@import './page.css';
