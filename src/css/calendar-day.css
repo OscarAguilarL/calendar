@@ -1,0 +1,57 @@
+.calendarDay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  position: sticky;
+  top: 0;
+  border-block-end: 1px solid currentColor;
+  background-color: var(--white);
+}
+
+.calendarDay a {
+  text-decoration: none;
+  color: currentColor;
+  outline: none;
+}
+
+.calendarDay a:hover span:nth-of-type(2),
+.calendarDay a:focus span:nth-of-type(2) {
+  background: var(--gray10)
+}
+
+.calendarDay.is-selected a:hover span:nth-of-type(2),
+.calendarDay.is-selected a:focus span:nth-of-type(2) {
+  background-color: var(--blue30);
+}
+
+
+.calendarDay span:nth-of-type(1) {
+  font: var(--body1Medium);
+}
+.calendarDay span:nth-of-type(2) {
+  font: var(--subtitle);
+  line-height: 2.75rem;
+  inline-size: 2.75rem;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.calendarDay::before {
+  content: '';
+  inline-size: 1px;
+  block-size: 2rem;
+  background-color: currentColor;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.calendarDay.is-selected span:nth-of-type(1){
+  color: var(--blue10);
+}
+.calendarDay.is-selected span:nth-of-type(2){
+  background-color: var(--blue10);
+  color: var(--white);
+}
