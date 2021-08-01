@@ -1,0 +1,20 @@
+.timezoneCell {
+  font: var(--body3Regular);
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-inline-end: 1rem;
+  white-space: nowrap;
+}
+
+.timezoneCell::before {
+  content: '';
+  inline-size: 0.5rem;
+  block-size: 1px;
+  background-color: var(--gray20);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
