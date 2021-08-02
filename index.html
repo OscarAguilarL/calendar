@@ -14,6 +14,7 @@
     <title>Calendar</title>
   </head>
   <body>
+    <!-- TODO: cambiar el formato de fecha de datetime por aaaa-mm-dd -->
     <div class="page">
       <header class="header">
         <div class="header-primary">
@@ -57,11 +58,78 @@
             <option>Día</option>
           </select>
           <a href="#user">
-            <img src="./src/assets/images/user.png" alt="Imágen del usuario">
+            <img src="./src/assets/images/user.png" alt="Imágen del usuario" />
           </a>
         </div>
       </header>
-      <aside class="sidebar"></aside>
+      <aside class="sidebar">
+        <div class="miniCalendar" aria-label="Calendario de navegación">
+          <div class="miniCalendar-status">
+            <time class="miniCalendar-date" datetime="2021-06">Junio 2021</time>
+            <div class="miniCalendar-navigation">
+              <a class="button is-compact" href="#prevMonth" aria-label="Mes anterior">
+                <i class="icon-chevron-left" aria-hidden="true"></i>
+              </a>
+              <a class="button is-compact" href="#nextMonth" aria-label="Siguiente mes">
+                <i class="icon-chevron-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="miniCalendar-header">
+            <span class="miniCalendar-weekDay">D</span>
+            <span class="miniCalendar-weekDay">L</span>
+            <span class="miniCalendar-weekDay">M</span>
+            <span class="miniCalendar-weekDay">M</span>
+            <span class="miniCalendar-weekDay">J</span>
+            <span class="miniCalendar-weekDay">V</span>
+            <span class="miniCalendar-weekDay">S</span>
+          </div>
+          <div class="miniCalendar-month">
+            <div class="miniCalendar-monthDay is-inactive">30</div>
+            <div class="miniCalendar-monthDay">1</div>
+            <div class="miniCalendar-monthDay">2</div>
+            <div class="miniCalendar-monthDay">3</div>
+            <div class="miniCalendar-monthDay">4</div>
+            <div class="miniCalendar-monthDay">5</div>
+            <div class="miniCalendar-monthDay">6</div>
+            <div class="miniCalendar-monthDay">7</div>
+            <div class="miniCalendar-monthDay">8</div>
+            <div class="miniCalendar-monthDay">9</div>
+            <div class="miniCalendar-monthDay">10</div>
+            <div class="miniCalendar-monthDay">11</div>
+            <div class="miniCalendar-monthDay">12</div>
+            <div class="miniCalendar-monthDay">13</div>
+            <div class="miniCalendar-monthDay">14</div>
+            <div class="miniCalendar-monthDay">15</div>
+            <div class="miniCalendar-monthDay">16</div>
+            <div class="miniCalendar-monthDay">17</div>
+            <div class="miniCalendar-monthDay">18</div>
+            <div class="miniCalendar-monthDay">19</div>
+            <div class="miniCalendar-monthDay">20</div>
+            <div class="miniCalendar-monthDay">21</div>
+            <div class="miniCalendar-monthDay">22</div>
+            <div class="miniCalendar-monthDay">23</div>
+            <div class="miniCalendar-monthDay">24</div>
+            <div class="miniCalendar-monthDay is-selected">25</div>
+            <div class="miniCalendar-monthDay">26</div>
+            <div class="miniCalendar-monthDay">27</div>
+            <div class="miniCalendar-monthDay">28</div>
+            <div class="miniCalendar-monthDay">29</div>
+            <div class="miniCalendar-monthDay">30</div>
+            <div class="miniCalendar-monthDay is-inactive">1</div>
+            <div class="miniCalendar-monthDay is-inactive">2</div>
+            <div class="miniCalendar-monthDay is-inactive">3</div>
+            <div class="miniCalendar-monthDay is-inactive">4</div>
+            <div class="miniCalendar-monthDay is-inactive">5</div>
+            <div class="miniCalendar-monthDay is-inactive">6</div>
+            <div class="miniCalendar-monthDay is-inactive">7</div>
+            <div class="miniCalendar-monthDay is-inactive">8</div>
+            <div class="miniCalendar-monthDay is-inactive">9</div>
+            <div class="miniCalendar-monthDay is-inactive">10</div>
+            <div class="miniCalendar-monthDay is-inactive">11</div>
+          </div>
+        </div>
+      </aside>
       <main class="calendar">
         <div class="currentTime"></div>
         <div class="calendar-week">
