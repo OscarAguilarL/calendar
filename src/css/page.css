@@ -9,7 +9,6 @@
 }
 
 .page .header {
-  border: 10px solid blue;
   grid-area: header;
 }
 

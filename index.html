@@ -16,34 +16,50 @@
   <body>
     <div class="page">
       <header class="header">
-        <div class="calendarStatus">
-          <button class="button is-secondary">Hoy</button>
-          <span class="calendarStatus-navigation">
-            <a href="#" class="button is-compact" aria-label="Semana anterior">
-              <i class="icon-chevron-left" aria-hidden="true"></i>
+        <div class="header-primary">
+          <div class="header-logo">
+            <button class="button is-compact">
+              <i class="icon-hamburguer"></i>
+            </button>
+            <a href="./index.html" aria-label="Calendar" tabindex="-1">
+              <img
+                src="./src/assets/images/logo.png"
+                alt="Logo de Google Calendar"
+              />
             </a>
-            <a href="#" class="button is-compact" aria-label="Semana Siguiente">
-              <i class="icon-chevron-right" aria-hidden="true"></i>
-            </a>
-          </span>
-          <time class="calendarStatus-date" datetime="25-06-2021">25 de Junio</time>
+          </div>
+          <div class="calendarStatus">
+            <button class="button is-secondary">Hoy</button>
+            <span class="calendarStatus-navigation">
+              <a
+                href="#"
+                class="button is-compact"
+                aria-label="Semana anterior"
+              >
+                <i class="icon-chevron-left" aria-hidden="true"></i>
+              </a>
+              <a
+                href="#"
+                class="button is-compact"
+                aria-label="Semana Siguiente"
+              >
+                <i class="icon-chevron-right" aria-hidden="true"></i>
+              </a>
+            </span>
+            <time class="calendarStatus-date" datetime="25-06-2021">
+              25 de Junio
+            </time>
+          </div>
         </div>
-        <select class="select">
-          <option selected>Semana</option>
-          <option>Día</option>
-        </select>
-        <button class="button">button</button>
-        <a href="#" class="button">button</a>
-        <a href="#" class="button is-primary">button</a>
-        <a href="#" class="button is-secondary">
-          button
-        </a>
-        <a href="#" class="button is-rounded is-shadowed">
-          <i class="icon-plus" aria-hidden="true"></i> <span>button</span>
-        </a>
-        <a href="#" class="button is-compact">
-          <i class="icon-plus" aria-hidden="true"></i>
-        </a>
+        <div class="header-secondary">
+          <select class="select">
+            <option selected>Semana</option>
+            <option>Día</option>
+          </select>
+          <a href="#user">
+            <img src="./src/assets/images/user.png" alt="Imágen del usuario">
+          </a>
+        </div>
       </header>
       <aside class="sidebar"></aside>
       <main class="calendar">
@@ -108,7 +124,11 @@
           </h2>
           <span class="hourCell"></span>
           <div class="taskCell">
-            <div tabindex="0" class="task" aria-label="De 17:00 a 18:00, hacer ejercicio">
+            <div
+              tabindex="0"
+              class="task"
+              aria-label="De 17:00 a 18:00, hacer ejercicio"
+            >
               <p>Hacer la tarea</p>
               <p>
                 <time datetime="17:00">5</time> -
@@ -117,7 +137,11 @@
             </div>
           </div>
           <div class="taskCell">
-            <div tabindex="0" class="task" aria-label="De 17:00 a 18:00, hacer ejercicio">
+            <div
+              tabindex="0"
+              class="task"
+              aria-label="De 17:00 a 18:00, hacer ejercicio"
+            >
               <p>Hacer la tarea</p>
               <p>
                 <time datetime="17:00">5</time> -
@@ -126,7 +150,11 @@
             </div>
           </div>
           <div class="taskCell">
-            <div tabindex="0" class="task" aria-label="De 17:00 a 18:00, hacer ejercicio">
+            <div
+              tabindex="0"
+              class="task"
+              aria-label="De 17:00 a 18:00, hacer ejercicio"
+            >
               <p>Hacer la tarea</p>
               <p>
                 <time datetime="17:00">5</time> -
