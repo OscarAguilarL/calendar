@@ -17,18 +17,17 @@
 .myCalendars summary {
   font: var(--body1Medium);
   color: var(--gray30);
+  margin-block-end: 0.625rem;
 
   list-style: none;
 
   background-image: url('../assets/icons/chevron-down.svg');
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right 1.5rem center;
 }
 
 .myCalendars[open] summary {
   background-image: url('../assets/icons/chevron-up.svg');
-  background-repeat: no-repeat;
-  background-position: right center;
 }
 
 .myCalendars-check {
