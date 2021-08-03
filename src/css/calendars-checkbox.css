@@ -18,8 +18,10 @@
   font: var(--body1Medium);
   color: var(--gray30);
   margin-block-end: 0.625rem;
+  padding-inline-end: 6rem;
 
   list-style: none;
+  cursor: pointer;
 
   background-image: url('../assets/icons/chevron-down.svg');
   background-repeat: no-repeat;

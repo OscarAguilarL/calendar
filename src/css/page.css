@@ -13,7 +13,6 @@
 }
 
 .page .sidebar {
-  border: 10px solid yellow;
   grid-area: sidebar;
 }
 

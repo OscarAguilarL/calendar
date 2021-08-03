@@ -4,6 +4,7 @@
   align-items: center;
   padding-inline-start: 1.5rem;
   padding-inline-end: 1.5rem;
+  border-block-end: 1px solid var(--gray10);
 }
 
 .header-logo {
