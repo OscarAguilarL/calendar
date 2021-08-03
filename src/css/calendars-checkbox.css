@@ -1,0 +1,47 @@
+.search {
+  border: none;
+  background: var(--gray10);
+  padding: 0.625rem;
+  padding-inline-start: 2rem;
+  background-image: url('../assets/icons/users.svg');
+  background-repeat: no-repeat;
+  background-position: left 0.5rem center;
+  background-size: 1rem;
+}
+
+.search::placeholder {
+  color: var(--gray30);
+  font: var(--body1Regular);
+}
+
+.myCalendars summary {
+  font: var(--body1Medium);
+  color: var(--gray30);
+
+  list-style: none;
+
+  background-image: url('../assets/icons/chevron-down.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.myCalendars[open] summary {
+  background-image: url('../assets/icons/chevron-up.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.myCalendars-check {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.25rem;
+}
+
+.myCalendars-check i,
+.myCalendars-check p {
+  margin: 0;
+  margin-block-end: 0.75rem;
+  font: var(--body1Regular);
+  color: var(--gray30);
+}
