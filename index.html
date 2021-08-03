@@ -70,10 +70,18 @@
           <div class="miniCalendar-status">
             <time class="miniCalendar-date" datetime="2021-06">Junio 2021</time>
             <div class="miniCalendar-navigation">
-              <a class="button is-compact" href="#prevMonth" aria-label="Mes anterior">
+              <a
+                class="button is-compact"
+                href="#prevMonth"
+                aria-label="Mes anterior"
+              >
                 <i class="icon-chevron-left" aria-hidden="true"></i>
               </a>
-              <a class="button is-compact" href="#nextMonth" aria-label="Siguiente mes">
+              <a
+                class="button is-compact"
+                href="#nextMonth"
+                aria-label="Siguiente mes"
+              >
                 <i class="icon-chevron-right" aria-hidden="true"></i>
               </a>
             </div>
@@ -132,25 +140,42 @@
             <div class="miniCalendar-monthDay is-inactive">11</div>
           </div>
         </div>
-        <input type="text" class="search" placeholder="Buscar personas">
+        <input type="text" class="search" placeholder="Buscar personas" />
         <details class="myCalendars" open>
-          <summary>
-            Mis calendarios
-          </summary>
+          <summary>Mis calendarios</summary>
           <div class="myCalendars-check">
-            <input class="myCalendars-input" type="checkbox" id="oscar" checked>
+            <input
+              class="myCalendars-input"
+              type="checkbox"
+              id="oscar"
+              checked
+            />
             <label for="oscar">Oscar Aguilar</label>
           </div>
           <div class="myCalendars-check">
-            <input class="myCalendars-input" type="checkbox" id="cumpleanos" checked>
+            <input
+              class="myCalendars-input"
+              type="checkbox"
+              id="cumpleanos"
+              checked
+            />
             <label for="cumpleanos">Cumpleaños</label>
           </div>
           <div class="myCalendars-check">
-            <input class="myCalendars-input" type="checkbox" id="tareas" checked>
+            <input
+              class="myCalendars-input"
+              type="checkbox"
+              id="tareas"
+              checked
+            />
             <label for="tareas">Tareas</label>
           </div>
           <div class="myCalendars-check">
-            <input class="myCalendars-input" type="checkbox" id="recordatorios">
+            <input
+              class="myCalendars-input"
+              type="checkbox"
+              id="recordatorios"
+            />
             <label for="recordatorios">Recordatorios</label>
           </div>
         </details>
@@ -454,5 +479,21 @@
         </div>
       </main>
     </div>
+    <dialog class="modal">
+      <form>Form.</form>
+      <div class="modal-actions">
+        <button class="button">
+          Cancelar
+        </button>
+        <button class="button is-primary">
+          Guardar
+        </button>
+      </div>
+    </dialog>
+
+    <script>
+      document.querySelector('.modal').showModal();
+
+    </script>
   </body>
 </html>
