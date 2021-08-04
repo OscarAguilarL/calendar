@@ -480,55 +480,65 @@
       </main>
     </div>
     <dialog class="modal">
-      <form>
-        <div class="input">
-          <input
-            type="text"
-            name="title"
-            placeholder="Añade un título"
-            required
-          />
+      <form class="createTask">
+        <div class="input is-outstanding">
+          <div class="input-body">
+            <input
+              type="text"
+              name="title"
+              placeholder="Añade un título"
+              required
+            />
+          </div>
         </div>
         <div class="input">
-          <input type="date" name="date" required />
+          <i class="icon-clock" aria-hidden="true"></i>
+          <div class="input-body">
+            <input type="date" name="date" required />
+            <input type="time" name="time-start" required />
+            <input type="time" name="time-end" required />
+          </div>
         </div>
         <div class="input">
-          <input type="time" name="time-start" required />
+          <i class="icon-users" aria-hidden="true"></i>
+          <div class="input-body">
+            <input
+              type="text"
+              list="guests"
+              name="guests"
+              placeholder="Agregar invitados"
+              required
+              autocomplete="off"
+            />
+            <datalist id="guests">
+              <option value="Maria Dolores"></option>
+              <option value="Ana Zepeda"></option>
+              <option value="Tadeo López"></option>
+            </datalist>
+          </div>
         </div>
         <div class="input">
-          <input type="time" name="time-end" required />
+          <i class="icon-gps" aria-hidden="true"></i>
+          <div class="input-body">
+            <input name="location" type="text" placeholder="Agregar ubicación" />
+          </div>
         </div>
         <div class="input">
-          <input
-            type="text"
-            list="guests"
-            name="guests"
-            placeholder="Agregar invitados"
-            required
-            autocomplete="off"
-          />
-          <datalist id="guests">
-            <option value="Maria Dolores"></option>
-            <option value="Ana Zepeda"></option>
-            <option value="Tadeo López"></option>
-          </datalist>
+          <i class="icon-text" aria-hidden="true"></i>
+          <div class="input-body"><input type="file" multiple /></div>
         </div>
         <div class="input">
-          <input name="location" type="text" placeholder="Agregar ubicación" />
+          <i class="icon-text" aria-hidden="true"></i>
+          <div class="icon-body">
+            <textarea
+              name="description"
+              placeholder="Agregar descripción"
+              id=""
+              cols="40"
+              rows="2"
+            ></textarea>
+          </div>
         </div>
-        <div class="input">
-          <input type="file" multiple />
-        </div>
-        <div class="input">
-          <textarea
-            name="description"
-            placeholder="Agregar descripción"
-            id=""
-            cols="30"
-            rows="10"
-          ></textarea>
-        </div>
-        <input type="submit" />
       </form>
       <div class="modal-actions">
         <button class="button">Cancelar</button>
