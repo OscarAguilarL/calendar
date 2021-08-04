@@ -24,4 +24,6 @@
 body {
   font: var(--body1Regular);
   margin: 0;
+  color: var(--gray50);
+  background: var(--white);
 }
